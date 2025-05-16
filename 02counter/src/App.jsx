@@ -7,14 +7,25 @@ function App() {
   // let counter = 15;
 
   const addValue = () =>{
-    console.log('clicked', counter)
+    if(counter <= 19){
+      console.log('clicked', counter)
     counter += 1
     setCounter(counter)
+
+    }else{
+      alert("addValue is limit over")
+    }
+    
   }
 
   const removeValue = ()=>{
-    console.log('clicked', counter)
-    counter -= 1
+
+    if(counter >= 1){
+     setCounter(counter-1)
+    }else{
+      alert("remove value is over")
+    }
+    
   }
   
    
